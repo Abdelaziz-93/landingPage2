@@ -1049,7 +1049,6 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
 }
 
 .section-five .big-container .container{
-    /* position: relative; */
     width: 70%;
     margin: 0 1rem 0 auto;
 }
