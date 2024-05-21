@@ -265,7 +265,9 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
 .header-container .title-style .btn:hover{
     transform: scale(1.05);
 }
-
+.btn-version-mobile{
+    display: none;
+}
 
 
 
@@ -301,6 +303,29 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
     }
     .header-container .title-style .btn{
        display: none;
+    }
+    .btn-version-mobile{
+        display: block;
+        width: 100%;
+    }
+    .btn-version-mobile .btn{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color:#96BF0D ;
+        color: #FFF;
+        text-transform: uppercase;
+        font-size: 6.2vw;
+        line-height: 0.2vw;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        /* height: 4vh; */
+        padding: 10% 2rem;
+        font-weight: 700;
+        transition-duration: 0.3s;
+        width: 100%;
+        z-index: 99;
     }
     
 }
@@ -1532,6 +1557,9 @@ footer .icons i{
 }
 
 @media only screen and (max-width:1000px){
+    footer{
+        padding: 2vw 0 20vw 0;
+    }
     footer .footer-container .footer-div-1{
         width: 100vw;
         justify-content: center;
@@ -1626,7 +1654,6 @@ footer .icons i{
         width: 80vw;
         justify-content: center;
         gap: 2vw;
-
     }
 }
 
