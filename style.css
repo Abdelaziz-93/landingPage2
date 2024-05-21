@@ -1431,9 +1431,12 @@ footer{
 footer .footer-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 footer .footer-container .footer-div-1{
+    display: flex;
+    flex-direction: column;
     width: 18vw;
 }
 
@@ -1490,8 +1493,14 @@ footer .icons i{
     justify-content: center;
     gap: .3vw;
 }
-.footer-div-2 .links a{
-    padding-top: 3vw;
+.footer-div-2 .links p{
+    font-size: .6vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #3C3929;
+    margin-top: 3vw;
+}
+.footer-div-2 .links p a{
     font-size: .6vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -1517,6 +1526,108 @@ footer .icons i{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #3C3929;
+}
+.footer-div-1 p span{
+    font-weight: 500;
+}
+
+@media only screen and (max-width:1000px){
+    footer .footer-container .footer-div-1{
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-container{
+        gap: 6vw;
+    }
+    
+    .footer-div-2{
+        width: 100vw;
+    }
+    .footer-div-1 .div-img{
+        width: 52vw;
+    }
+    .footer-div-1 .div-img img{
+        width: 100%;
+    }
+    .footer-div-1 p{
+        padding-top: 2vw;
+        font-size: 4.4vw;
+        font-weight: 300;
+    }
+        .footer-div-3{
+            flex-wrap: wrap;
+            gap: .5vw;
+        }
+    
+    footer .icons{
+        gap: 10vw;
+        margin-top: 2vw;
+    }
+    
+    footer .icons i{
+        font-size: 7vw;
+    }
+    
+    .footer-div-2{
+        width: 100vw;
+    }
+    
+    .footer-div-2 p{
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        padding-bottom: .6vw;
+        font-size: 5.6vw;
+        color: #3C3929;
+    }
+    
+    .footer-div-2 .links{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-div-2 .links p{
+        font-size: 4.2vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #3C3929;
+        margin-top: 6vw;
+    }
+    .footer-div-2 .links p a{
+        font-size: 4.2vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #3C3929;
+    }
+    .footer-div-2 .links a:hover{
+        text-decoration: underline;
+        color: #3C3929;
+    }
+    
+    
+    
+    .footer-div-3 .div-img{
+        width: 16vw;
+        margin: auto;
+    }
+    
+    .footer-div-3 .div-img img{
+        width: 100%;
+    }
+    
+    .footer-div-3 p{
+        font-size: 4vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        color: #3C3929;
+    }
+    .footer-div-3{
+        width: 80vw;
+        justify-content: center;
+        gap: 2vw;
+
+    }
 }
 
 
