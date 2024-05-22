@@ -9,6 +9,12 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('./fonts/roboto-condensed/RobotoCondensed-Regular.ttf') format('opentype');
+  }
+
 /* body{
     font-size: 1.6rem;
 } */
@@ -1430,19 +1436,7 @@ padding: 60px 0 8% 0;
 
  
 
- /* .form{
-    width: 100%;
-    height: 10px;
-    position: sticky;
-    bottom: 40vw;
- }
 
- .form .sticky{
-    width: 100vw;
-    height: 60px;
-   
-    background-color: #96BF0D;
- } */
 
 
 
@@ -1658,10 +1652,432 @@ footer .icons i{
 }
 
 
+/* form */
+
+.form{
+    width: 100%;
+
+ }
+
+ .form .sticky {
+    z-index: 99999;
+    position: fixed;
+    top: 9vw;
+    right: 14vw;
+    width: 28%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    
+   
+ }
+
+ .form .sticky form{
+    padding: 4% 5%;
+ }
+
+ .form h2 img{
+    width: 1.1vw;
+ }
+ .form h2{
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: #96BF0D;
+   
+ }
+
+ .form h3{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: .96vw;
+    font-weight: 400;
+    color: #F29400;
+    margin: 2% 0;
+ }
+
+.form .div-dots{
+    text-align: start;
+    border-bottom: 1px solid #BEBEBE ;
+    margin-top: 5%;
+}
+
+.form .dot_3 {
+    font-size: .95vw;
+    color: #3C3929;
+    font-family: "Roboto Condensed", sans-serif;
+    cursor: pointer;
+    margin-right:4%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-transform: uppercase;
+  }
+  
+  .form  .active {
+    border-bottom: 2px solid #F29400;
+    font-weight: 600;
+  }
+  .form .input-flex{
+    display: flex;
+    gap: 2%;
+  }
+
+  .form .input-flex input{
+    width: 49%;
+  }
+  .form .input-flex1{
+    display: flex;
+    gap: 2%;
+  }
+  .form .input-flex1 .input1{
+    width: 27%;
+  }
+  .form .input-flex1 .input2{
+    width: 71%;
+  }
+  .form input{
+    width: 100%;
+    border: 1px solid #BEBEBE;
+    margin-bottom: .7vw;
+    height: 2.2vw;
+    font-size: .9vw;
+    font-weight: 300;
+    color: #797979;
+    padding: 0 .2vw 0 1vw;
+  }
+  .form .btn_form{
+    width: 100%;
+    border: none;
+    margin-bottom: .7vw;
+    height: 3.2vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 0 .2vw 0 1vw;
+    background-color: #96BF0D;
+  }
+
+  .form .champ_obligatoire p{
+    font-size: .5vw;
+    font-family: 'RobotoRegular';
+    margin-bottom: 1vw;
+}
+  .form .champ_obligatoire .para1{
+    color: #797979;
+    margin: 1% 0;
+    font-family: 'RobotoRegular';
+}
+
+.form .icon-mobile{
+    display: none;
+}
+
+.form .div-links{
+    background-color: #F29400;
+    padding: 4% 5%;
+}
+
+.form .div-links h2{
+    color: #FFF;
+    font-size: 1.2vw;
+    font-weight: 300;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #F29400;
+    position: relative;
+}
+.form .div-links h2::after{
+    position: absolute;
+    content: '';
+    background-color: #FFF;
+    width: 37%;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 1px;
+    color: #FFF;
+    font-size: 1.2vw;
+    font-weight: 300;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.form .div-links p{
+    margin: 2% 0;
+    font-size: .8vw;
+    color: #FFF;
+    font-weight: 400;
+}
+.form .div-links p span{
+    font-size: .85vw;
+
+    color: #FFF;
+    font-weight: 700;
+}
+.form .div-links .links{
+    display: flex;
+    gap: 1.1vw;
+    align-items: center;
+}
+
+.form .div-links .links a{
+    display: flex;
+    align-items: center;
+    gap: .7vw;
+    font-size: 1vw;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #3C3929;
+}
+
+.form .div-links .links img{
+    width: 1.1vw;
+}
+.champ_obligatoire-mobile{
+    display: none;
+}
 
 
 
 
+ /* Basic styles for the body */
+  
+  /* Flexbox container for radio buttons */
+  .form .radio-group {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    margin: 4% 0;
+  }
+  
+  /* Container for each radio button and label */
+  .form  .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 2vw;
+    cursor: pointer;
+    font-size:.95vw;
+    user-select: none;
+  }
+  
+  /* Hide the actual radio button */
+  .form  .container input {
+    
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .form  .checkmark {
+    outline: 1px solid #BEBEBE;
+    border:1px solid #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:1vw;
+    width:1vw;
+    padding: 1px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a background color */
+  .form  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .form .container input:checked ~ .checkmark {
+    background-color: #F29400;
+    outline: 1px solid #F29400;
+  }
+  .form  input:checked ~ label {
+    font-weight: 700;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .form .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .form  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
 
+@media only screen and (max-width:1000px){
+    .form .sticky {
+        position: fixed;
+        top: 0;
+        right:unset ;
+        left: -100%;
+        width: 100%;
+        transition: all .4s;
+        overflow: auto;
+        height: 100vh;
+       
+     }
+     
+
+     .sticky.show{
+        left: 0;
+     }
+    .form .flex-mobile{
+        display: flex;
+        gap: 3vw;
+
+    }
+    .form .icon-mobile{
+        display: block;
+        width: 11vw;
+        height: 11vw;
+        cursor: pointer;
+    }
+    .form .sticky form{
+        padding: 6% 5%;
+     }
+    .form h2 img{
+        width: 4vw;
+     }
+     .form h2{
+        font-family: "Oswald", sans-serif;
+        font-size: 4.6vw;
+        text-transform: uppercase;
+        color: #96BF0D;
+       
+     }
+    
+     .form h3{
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 4.4vw;
+        font-weight: 400;
+        color: #F29400;
+        margin: 2% 0;
+     }
+     .form .div-dots{
+        text-align: start;
+        border-bottom: 1px solid #BEBEBE ;
+        margin-top: 5%;
+    }
+    
+    .form .dot_3 {
+        font-size: 4.5vw;
+      }
+      
+      .form  .active {
+        border-bottom: 4px solid #F29400;
+      }
+      .form .input-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3vw;
+      }
+    
+      .form .input-flex input{
+        width: 100%;
+      }
+      .form .input-flex1{
+        display: flex;
+        gap: 2%;
+      }
+      .form .input-flex1 .input1{
+        width: 34%;
+      }
+      .form .input-flex1 .input2{
+        width: 64%;
+      }
+      .form input{
+        width: 100%;
+        margin-bottom: 2vw;
+        height: 9vw;
+        font-size: 4vw;
+        font-weight: 300;
+        color: #797979;
+        padding: 0 2vw 0 4vw;
+      }
+      .form .btn_form{
+        width: 80%;
+        height: 14vw;
+        font-size: 4vw;
+        padding: 0 3vw 0 1vw;
+        margin:0 10%;
+      }
+
+      .form .champ_obligatoire{
+       display: none;
+    }
+      .champ_obligatoire-mobile{
+        display: block;
+    }
+      .form .champ_obligatoire-mobile p{
+        font-size: 4vw;
+        font-family: 'RobotoRegular';
+        margin: 2vw 0 5vw 0;
+        color: #797979;
+    }
+    
+    .form .div-links{
+        background-color: #F29400;
+        padding: 4% 5%;
+    }
+    
+    .form .div-links h2{
+        color: #FFF;
+        font-size: 4.7vw;
+        font-weight: 300;
+        font-family: "Roboto Condensed", sans-serif;
+        background-color: #F29400;
+        position: relative;
+    }
+    .form .div-links h2::after{
+        width: 30%;
+    }
+    
+    .form .div-links p{
+        margin: 2% 0;
+        font-size: 4vw;
+    }
+    .form .div-links p span{
+        font-size: 4.2vw;
+    }
+    .form .div-links .links{
+        display: flex;
+        gap: 4vw;
+        align-items: center;
+    }
+    
+    .form .div-links .links a{
+        gap: 1vw;
+        font-size: 4.2vw;
+    }
+    
+    .form .div-links .links img{
+        width: 6.2vw;
+    }
+    
+
+    .form .radio-group {
+        display: flex;
+        gap: 10vw;
+        align-items: center;
+        margin: 4% 0;
+      }
+      
+      /* Container for each radio button and label */
+      .form  .container {
+        padding-left: 5vw;
+        font-size:5vw;
+      }
+      
+      /* Create a custom radio button */
+      .form  .checkmark {    
+        border:3px solid #FFF;
+        top: 1vw;
+        left: 0;
+        height:4vw;
+        width:4vw;
+        
+      }
+}
 
 

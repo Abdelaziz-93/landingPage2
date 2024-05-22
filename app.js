@@ -134,6 +134,34 @@ function showSlid_2(n) {
   slides[slideIndeex-1].style.display = "block";
   dotss[slideIndeex-1].className += " active";
 }
+let slideIndxx = 1;
+showSlid_3(slideIndxx);
+
+// Next/previous controls
+// function plusSlid(n) {
+//   showSlid_3(slideIndxx += n);
+// }
+
+// Thumbnail image controls
+function currentSlid_3(n) {
+  showSlid_3(slideIndxx = n);
+}
+
+function showSlid_3(n) {
+  let i;
+  let slid = document.getElementsByClassName("mySlid_3");
+  let dots_3 = document.getElementsByClassName("dot_3");
+  if (n > slid.length) {slideIndxx = 1}
+  if (n < 1) {slideIndxx = slid.length}
+  for (i = 0; i < slid.length; i++) {
+    slid[i].style.display = "none";
+  }
+  for (i = 0; i < dots_3.length; i++) {
+    dots_3[i].className = dots_3[i].className.replace(" active", "");
+  }
+  slid[slideIndxx-1].style.display = "block";
+  dots_3[slideIndxx-1].className += " active";
+}
 
 // scripts.js
 // document.addEventListener('DOMContentLoaded', () => {
@@ -190,6 +218,36 @@ document.addEventListener('DOMContentLoaded', function () {
               icon.classList.add('fa-minus');
           }
       });
+  });
+});
+
+
+// let sticky = document.querySelectorAll('.sticky')
+// let btn = document.querySelectorAll('.btn-global')
+
+// btn.addEventListener('click' ,()=>{
+//   sticky.classList.add("show");
+// })
+
+let sticky = document.querySelectorAll('.sticky');
+let btn = document.querySelectorAll('.btn-global');
+let btn2 = document.querySelectorAll('.icon-mobile');
+
+// Add event listener to each button
+btn.forEach(button => {
+  button.addEventListener('click', () => {
+    // Add class to each sticky element
+    sticky.forEach(stick => {
+      stick.classList.add("show");
+    });
+  });
+});
+btn2.forEach(button => {
+  button.addEventListener('click', () => {
+    // Add class to each sticky element
+    sticky.forEach(stick => {
+      stick.classList.remove("show");
+    });
   });
 });
 
