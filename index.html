@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script src="https://kit.fontawesome.com/fe059810cd.js" crossorigin="anonymous"></script>
+
     <title>WelFarm</title>
 </head>
 <body>
@@ -37,7 +41,7 @@
         <section class="header-container">
            <div class="title-style">
             <div>
-            <h1 class="title">
+            <h1 class="title" data-aos="fade-down" data-aos-duration="2000">
                 transmettre à welfarm <br> <span class="span1">c'est offrir</span><br> <span class="span2">une vie meilleure à <br> des milliers d'animaux</span>
             </h1>
             <a href="#" class="btn">je demande ma brochure</a>
@@ -55,11 +59,11 @@
         <section class="section-one">
             <div class="title-style">
              <div>
-             <h3 class="title">
+             <h3 class="title" data-aos="fade-down" data-aos-duration="1500">
                  transmettre à welfarm ,<br> <span class="span1">c'est agir</span><br> <span class="span2">durablement pour :</span>
              </h3>
             <ul class="active">
-                <li>
+                <li data-aos="fade-right" data-aos-duration="1500">
                     <img src="/images/Bien-etre_animaux.png" alt="">
                     <p>
                         <span>
@@ -68,7 +72,7 @@
                         </span>
                     </p>
                 </li>
-                <li>
+                <li data-aos="fade-left" data-aos-duration="1500">
                     <p>
                         <span>
                             Mettre fin aux cages, aux mutilations <br>
@@ -77,7 +81,7 @@
                     </p>
                     <img src="./images/Cage.png" alt="">
                 </li>
-                <li>
+                <li data-aos="fade-right" data-aos-duration="1500"> 
                     <img src="/images/Icon transport.png" alt="">
                     <p>
                         <span>
@@ -86,7 +90,7 @@
                         </span>
                     </p>
                 </li>
-                <li>
+                <li data-aos="fade-left" data-aos-duration="1500">
                     <p>
                         <span>
                             Obtenir un accès à un extérieur <br>
@@ -95,7 +99,7 @@
                     </p>
                     <img src="/images/Acces_exterieur.png" alt="">
                 </li>
-                <li>
+                <li data-aos="fade-right" data-aos-duration="1500">
                     <img src="./images/child_program.png" alt="">
                     <p>
                         <span>
@@ -107,7 +111,7 @@
                         </span>
                     </p>
                 </li>
-                <li>
+                <li data-aos="fade-left" data-aos-duration="1500">
                     <p>
                         <span>
                             Offrir un lieu d’accueil à des <br>
@@ -126,7 +130,7 @@
          <section class="section-two">
             <div class="title-style">
              <div class="div-container">
-             <h3 class="title">
+             <h3 class="title" data-aos="fade-down" data-aos-duration="1500">
                  choisissez<br> <span class="span1">le projet de transmission</span><br> <span class="span2">qui vous correspond</span>
              </h3>
 
@@ -137,9 +141,9 @@
          </div>
          <div class="relative">
             <div class="div-side">
-                <button class="side" onclick="currentSlide(1)">LE LEGS</button>
-                <button class="side" onclick="currentSlide(2)">LA DONATION</button>
-                <button class="side" onclick="currentSlide(3)">L'ASSURANCE-VIE</button>
+                <button class="side" onclick="currentSlide(1)" data-aos="fade-right" data-aos-duration="1000">LE LEGS</button>
+                <button class="side" onclick="currentSlide(2)" data-aos="fade-right" data-aos-duration="1500">LA DONATION</button>
+                <button class="side" onclick="currentSlide(3)" data-aos="fade-right" data-aos-duration="2000">L'ASSURANCE-VIE</button>
               </div> 
           <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
@@ -173,7 +177,7 @@
          <section class="section-tree">
             <div class="section-tree-container">
              <div class="slideshow-container">
-                <h3 class="title">
+                <h3 class="title" data-aos="fade-down" data-aos-duration="1500">
                     vos<br> <span class="span1">questions</span>
                 </h3>
                 <button class="prev" onclick="plusSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
@@ -260,7 +264,7 @@
          <section class="section-foor">
             <div class="big-container">
                 <div class="container">
-                    <h3 class="title">
+                    <h3 class="title" data-aos="fade-down" data-aos-duration="1500">
                         ils ont souhaité<br> <span class="span1">offrir une vie meilleure</span><br> <span class="span2">aux animaux</span>
                     </h3>
                     <div class="slideshow-container">
@@ -315,7 +319,7 @@
          <section class="section-five">
             <div class="big-container">
                 <div class="container">
-                    <h3 class="title">
+                    <h3 class="title" data-aos="fade-down" data-aos-duration="1500">
                         leur générosité fait progresser<br> <span class="span1">le bien-être animal :</span><br> <span class="span2">merci à aux</span>
                     </h3>
                     <div class="big-slideshow-container">
@@ -365,45 +369,45 @@
         <section class="section-six">
             <div class="big-container">
                 <div class="container">
-                    <h3 class="title">
+                    <h3 class="title" data-aos="fade-down" data-aos-duration="1500">
                         GRÂCE À SES BIENFAITEURS ET BIENFAITRICES,<br> <span class="span1">WELFARM FAIT PROGRESSER</span><br> <span class="span2">LE BIEN-ÊTRE DES ANIMAUX D'ÉLEVAGE DEPUIS 1994</span>
                     </h3>
                     <div class="div-flex">
-                        <div class="div-style-box">
+                        <div class="div-style-box" data-aos="fade-right" data-aos-duration="1500">
                             <div class="div-img"><img src="/images/users-three.png" alt=""></div>
                             <p>
                                 <span>28 salariés</span> <br>
                                 22 au siège et 6 à La Hardonnerie
                             </p>
                         </div>
-                        <div class="div-style-box">
+                        <div class="div-style-box" data-aos="fade-left" data-aos-duration="1500">
                             <div class="div-img"><img src="/images/person-arms-spread.png" alt=""></div>
                             <p>
                                 <span>Plus de 330 bénévoles</span> <br>
                                 actifs dans toute la France
                             </p>
                         </div>
-                        <div class="div-style-box">
+                        <div class="div-style-box" data-aos="fade-right" data-aos-duration="1500">
                             <div class="div-img-2"><img src="/images/Calque_2 (contours + épais).png" alt=""></div>
                             <p>
                                 <span>Plus de 500 animaux sauvés</span> <br>
                                 dans notre ferme refuge et éducative
                             </p>
                         </div>
-                        <div class="div-style-box">
+                        <div class="div-style-box" data-aos="fade-left" data-aos-duration="1500">
                             <div class="div-img-2"><img src="/images/hand-heart.png" alt=""></div>
                             <p>
                                 <span>Plus de 29 000 membres et donateurs</span> <br>
                             </p>
                         </div>
-                        <div class="div-style-box">
+                        <div class="div-style-box" data-aos="fade-right" data-aos-duration="1500">
                             <div class="div-img-5"><img src="/images/map-pin-line.png" alt=""></div>
                             <p>
                                 <span>7correspondants régionaux</span> <br>
                                 Alpes-Maritimes, Bouches-du-Rhône, Gers, Loire-Atlantique, Nord, Pyrénées-Atlantiques, Savoie
                             </p>
                         </div>
-                        <div class="div-style-box">
+                        <div class="div-style-box" data-aos="fade-left" data-aos-duration="1500">
                             <div class="div-img-2"><img src="/images/circle-group-people.png" alt=""></div>
                             <p>
                                 <span>Association reconnue d'utilité publique</span> <br>
@@ -562,6 +566,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+      </script>
 
     <script src="app.js"></script>
 </body>
