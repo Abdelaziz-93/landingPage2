@@ -221,13 +221,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+let nav1 = document.querySelector("nav");
 
-// let sticky = document.querySelectorAll('.sticky')
-// let btn = document.querySelectorAll('.btn-global')
-
-// btn.addEventListener('click' ,()=>{
-//   sticky.classList.add("show");
-// })
+window.onscroll = function () {
+    if (this.scrollY >= 40) {
+        nav1.classList.add("color");
+    } else {
+        nav1.classList.remove("color");
+    }
+}
 
 let sticky = document.querySelectorAll('.sticky');
 let btn = document.querySelectorAll('.btn-global');

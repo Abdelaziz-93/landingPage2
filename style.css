@@ -102,14 +102,18 @@ nav{
 
 
 @media only screen and (max-width:1000px) {
+    .color{
+        opacity: 0;
+    }
     nav{
         background-color: transparent;
+        box-shadow: none;
     }
     .navbar{
         display: flex;
         width: 100%;
         margin: 0 auto;
-        height: 7rem;
+        height: 14vw;
         background-color: transparent;
     }
     
@@ -125,15 +129,15 @@ nav{
     
     .navbar ul li a{
         display: inline-block;
-       font-size: 2.7rem;
+       font-size: 5vw;
        line-height: 1.4;
        font-family: "Oswald", sans-serif;
        font-weight: 400;
        color: #fff;
     }
     .navbar .navbar-logo{
-        width: 10rem;
-        height: 10rem;
+        width: 24vw;
+        height: 24vw;
     }
     .navbar .navbar-logo a{
         width: 100%;
@@ -146,59 +150,6 @@ nav{
     
     .navbar .navbar-btns{
         display: none;
-    }
-}
-@media only screen and (max-width:760px) {
-    .navbar{
-        width: 100%;
-        margin: 0 auto;
-        height: 5rem;
-    }
-    
-    .navbar ul li a{
-       font-size: 1.7rem;
-    }
-    .navbar .navbar-logo{
-        width: 8rem;
-        height: 8rem;
-    }
-    .navbar .navbar-logo a{
-        width: 100%;
-        display: inline-block;
-    }
-    
-    .navbar .navbar-logo img{
-        width: 100%;
-    }
-    
-    .navbar .navbar-btns a{
-        width: 10rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-}
-@media only screen and (max-width:500px) {
-    
-    .navbar ul li a{
-       font-size: 1rem;
-    }
-    .navbar .navbar-logo{
-        width: 7rem;
-        height: 7rem;
-    }
-    
-}
-@media only screen and (max-width:300px) {
-    
-    .navbar ul li a{
-       font-size: .8rem;
-    }
-    .navbar .navbar-logo{
-        width: 7rem;
-        height: 7rem;
     }
 }
 .global-container{
@@ -315,6 +266,7 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
         width: 100%;
     }
     .btn-version-mobile .btn{
+        border: none;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -326,7 +278,6 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
         text-align: center;
         display: inline-block;
         margin: 0 auto;
-        /* height: 4vh; */
         padding: 10% 2rem;
         font-weight: 700;
         transition-duration: 0.3s;
