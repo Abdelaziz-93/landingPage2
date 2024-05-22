@@ -278,7 +278,7 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
         text-align: center;
         display: inline-block;
         margin: 0 auto;
-        padding: 10% 2rem;
+        padding: 10% 0;
         font-weight: 700;
         transition-duration: 0.3s;
         width: 100%;
@@ -322,6 +322,7 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
 .section-one .title-style ul{
     list-style: none;
     margin: 0 1rem 0 auto;
+    overflow-x: hidden;
 }
 
 .section-one .title-style ul li{
@@ -654,6 +655,10 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
     transform: translateX(-50%);
 }
 @media only screen and (max-width:1000px){
+    [data-aos][data-aos][data-aos-duration="1500"], body[data-aos-duration="1500"] [data-aos],[data-aos][data-aos][data-aos-duration="2000"], body[data-aos-duration="2000"] [data-aos],[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+        opacity: 1 !important;
+        transform: translateZ(0) !important;
+    }
     .section-two  .title-style{
         width:100%;
     }
