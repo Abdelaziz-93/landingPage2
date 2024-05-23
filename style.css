@@ -1775,6 +1775,12 @@ footer .icons i{
    
  }
 
+ .form .sticky form input:focus{
+    outline: none;
+ }
+
+
+
  .form .sticky form{
     padding: 4% 5%;
  }

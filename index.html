@@ -458,14 +458,14 @@
                                   </label>
                             </div>
                                 <div class="input-flex">
-                                    <input type="text" placeholder="Nom*">
-                                    <input type="text" placeholder="Prenom*">
+                                    <input type="text" placeholder="Nom*" name="nom" id="nom" required>
+                                    <input type="text" placeholder="Prenom*" name="prenom" id="prenom" required>
                                 </div>
                                 <div>
                                     <input type="email" placeholder="Email*">
                                 </div>
                                 <div>
-                                    <input type="number" placeholder="Téléphone(facultatif)">
+                                    <input type="tel" placeholder="Téléphone(facultatif)" name="telephone" id="telephone">
                                 </div>
                                 <div class="champ_obligatoire-mobile"> 
                                     <p class="para1">*Champ obligatoire</p>
@@ -494,21 +494,21 @@
                                   </label>
                                 </div>
                                 <div class="input-flex">
-                                    <input type="text" placeholder="Nom*">
-                                    <input type="text" placeholder="Prenom*">
+                                    <input type="text" placeholder="Nom*" name="nom" id="nom" required>
+                                    <input type="text" placeholder="Prenom*" name="prenom" id="prenom" required>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Adresse postale*">
+                                    <input type="text" placeholder="Adresse postale*" >
                                 </div>
                                 <div class="input-flex1">
-                                    <input  type="text" placeholder="Code postale*" class="input1">
-                                    <input type="text" placeholder="Ville*" class="input2">
+                                    <input  type="text" placeholder="Code postale*" class="input1" name="code_postal" id="code_postal" pattern="[0-9]*"  required>
+                                    <input type="text" placeholder="Ville*" class="input2" name="ville" id="ville" required>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Téléphone*">
+                                    <input type="tel" placeholder="Téléphone*" name="telephone" id="telephone"  required>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Email*">
+                                    <input type="email" placeholder="Email*">
                                 </div>
                                 <div class="champ_obligatoire-mobile"> 
                                     <p class="para1">*Champ obligatoire</p>
@@ -575,6 +575,84 @@
     <script>
         AOS.init();
       </script>
+     <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const inputs = [
+            document.getElementById('nom'),
+            document.getElementById('prenom'),
+            document.getElementById('ville'),
+            document.getElementById('code_postal'),
+            document.getElementById('telephone')
+          ];
+      
+          inputs.forEach(input => {
+            input.addEventListener('input', function () {
+              if (input.type === 'text') {
+                // For text inputs (Nom, Prenom, Ville), allow only letters, spaces, apostrophes, and hyphens
+                const value = input.value;
+                const validValue = value.replace(/[^a-zA-ZÀ-ÿ\s'-]/g, '');
+                if (value !== validValue) {
+                  input.value = validValue;
+                }
+              } else if (input.type === 'number') {
+                // For numeric inputs (Code postal), allow only numbers
+                const value = input.value;
+                const validValue = value.replace(/\D/g, ''); // Replace non-digit characters with empty string
+                if (value !== validValue) {
+                  input.value = validValue;
+                }
+              } else if (input.type === 'tel') {
+                // For telephone input, allow only numbers and ensure exactly 10 digits
+                let value = input.value.replace(/\D/g, ''); // Remove non-digit characters
+                if (value.length > 10) {
+                  value = value.slice(0, 10); // Keep only the first 10 digits
+                }
+                input.value = value;
+              }
+            });
+          });
+        });
+      </script> -->
+      <script>
+     document.addEventListener('DOMContentLoaded', function () {
+  const inputs = [
+    document.getElementById('nom'),
+    document.getElementById('prenom'),
+    document.getElementById('ville'),
+    document.getElementById('code_postal'), // Adding the code postal input
+    document.getElementById('telephone')
+  ];
+
+  inputs.forEach(input => {
+    input.addEventListener('input', function () {
+      if (input === document.getElementById('code_postal')) {
+        // For code postal input, allow only numbers
+        const value = input.value;
+        const validValue = value.replace(/\D/g, ''); // Remove non-digit characters
+        if (value !== validValue) {
+          input.value = validValue;
+        }
+      } else if (input.type === 'tel') {
+        // For telephone input, allow only numbers and ensure exactly 10 digits
+        let value = input.value.replace(/\D/g, ''); // Remove non-digit characters
+        if (value.length > 10) {
+          value = value.slice(0, 10); // Keep only the first 10 digits
+        }
+        input.value = value;
+      } else {
+        // For text inputs (Nom, Prenom, Ville), allow only letters, spaces, apostrophes, and hyphens
+        const value = input.value;
+        const validValue = value.replace(/[^a-zA-ZÀ-ÿ\s'-]/g, '');
+        if (value !== validValue) {
+          input.value = validValue;
+        }
+      }
+    });
+  });
+});
+
+    </script>
+      
 
     <script src="app.js"></script>
 </body>
