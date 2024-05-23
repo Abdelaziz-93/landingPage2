@@ -905,6 +905,9 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
 }
 
 .section-tree .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Oswald", sans-serif;
     font-size: 1.4vw;
     cursor: pointer;
@@ -923,6 +926,9 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
 
 .section-tree .question:hover {
     color: #F29400;
+}
+.section-tree .question:hover i{
+    color: #F29400 !important;
 }
 
 
