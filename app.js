@@ -191,17 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
       question.addEventListener('click', () => {
           const isOpen = answer.style.display === 'block';
           
-          // Close all answers
-          // document.querySelectorAll('.answer').forEach(ans => ans.style.display = 'none');
-          // document.querySelectorAll('.icon').forEach(icn => icn.textContent = '+');
 
-          // if (isOpen) {
-          //     answer.style.display = 'none';
-          //     icon.textContent = '+';
-          // } else {
-          //     answer.style.display = 'block';
-          //     icon.textContent = '-';
-          // }
           document.querySelectorAll('.answer').forEach(ans => ans.style.display = 'none');
           document.querySelectorAll('.faa').forEach(icn => {
               icn.classList.remove('fa-minus');
