@@ -1766,8 +1766,7 @@ footer .icons i{
  .form .sticky {
     z-index: 99999;
     position: fixed;
-    transform: translateY(-50%);
-    top: 50%;
+    top: 8vw;
     right: 14vw;
     width: 28%;
     background-color: rgba(255, 255, 255, 0.9);
