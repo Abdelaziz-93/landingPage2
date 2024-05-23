@@ -1018,15 +1018,18 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
   }
 .section-tree .prevv {
     top:-5vw;
+    font-size: 2.5vw;
   }
 .section-tree .nextt {
     top:-5vw;
+    font-size: 2.5vw;
   }
 .section-tree .question {
     font-size: 4vw;
 }
 .section-tree .answer {
     font-size: 4vw;
+   
 }
 .section-tree .btn{
     font-size: 4vw;
