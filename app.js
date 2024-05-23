@@ -244,6 +244,23 @@ btn.forEach(button => {
     });
   });
 });
+function handleAnimation() {
+  sticky.forEach(stick => {
+    // Add the animation class
+    stick.classList.add("animation-pulse");
+
+    // Remove the animation class once the animation ends
+    stick.addEventListener('animationend', () => {
+      stick.classList.remove("animation-pulse");
+    }, { once: true });
+  });
+}
+
+// Add event listener to each button
+btn.forEach(button => {
+  button.addEventListener('click', handleAnimation);
+});
+
 btn2.forEach(button => {
   button.addEventListener('click', () => {
     // Add class to each sticky element
