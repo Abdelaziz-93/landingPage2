@@ -894,6 +894,25 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
     border-radius: 8px;
 }
 
+.section-tree .prevv{
+    position: absolute;
+    left: 1vw;
+    color: #3C3929;
+    padding-bottom: .5vw;
+    border-bottom: 1px solid #3C3929;
+  }
+  .section-tree .nextt {
+    position: absolute;
+    right: 1vw;
+    color: #3C3929;
+    padding-bottom: .5vw;
+    border-bottom: 1px solid #3C3929;
+  }
+  .section-tree  .mySlide{
+    position: relative;
+  }
+
+
 .section-tree .faq-container h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -994,7 +1013,15 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
     border-bottom: 1px solid #BEBEBE;;
     padding: 10px 0;
 }
-
+.section-tree .prev,.section-tree .next {
+    top: 4vw;
+  }
+.section-tree .prevv {
+    top:-5vw;
+  }
+.section-tree .nextt {
+    top:-5vw;
+  }
 .section-tree .question {
     font-size: 4vw;
 }
